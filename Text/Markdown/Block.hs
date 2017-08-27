@@ -278,7 +278,7 @@ takeTill f =
   where
     loop = await >>= maybe (return ()) (\x -> if f x then return () else yield x >> loop)
 
---takeTillConsume :: Monad m => (i -> Bool) -> Consumer i m (Maybe i, [i])
+takeTillConsume :: Monad m => (i -> Bool) -> Consumer i m (Maybe i, [i])
 takeTillConsume f =
     loop id
   where
