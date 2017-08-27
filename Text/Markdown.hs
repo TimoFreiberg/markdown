@@ -24,6 +24,7 @@ module Text.Markdown
     , htmlFencedHandler
       -- * Convenience re-exports
     , def
+    , Block(..)
     ) where
 
 import Control.Arrow ((&&&))
