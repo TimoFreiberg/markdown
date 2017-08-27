@@ -25,6 +25,7 @@ module Text.Markdown
       -- * Convenience re-exports
     , def
     , Block(..)
+    , Inline(..)
     ) where
 
 import Control.Arrow ((&&&))
